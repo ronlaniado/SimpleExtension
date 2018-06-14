@@ -5,7 +5,9 @@ chrome.runtime.onConnect.addListener(function(port) {
         const startInterval = setInterval(() => {
             port.postMessage({
                 time: time - 1
-            })
+            });
+            time--;
+            console.log(time);
         }, 1000);
 
     });
