@@ -1,0 +1,15 @@
+{
+	"short_name": "Simple Extension",
+	"name": "Extension",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "extension"
+	},
+	"web_accessible_resources": ["pomo.png"],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"version": "1.0",
+}
